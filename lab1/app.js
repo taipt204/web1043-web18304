@@ -1,12 +1,12 @@
 // nhập số a từ bàn phím.
-let a = prompt("Nhập số nguyên a:");
+    let a = prompt("Nhập số nguyên a:");
 
 // nhập b từ bàn phím.
-let b =prompt("Nhập số nguyên b:");
+    let b =prompt("Nhập số nguyên b:");
 
-let c = parseInt(a)+parseInt(b);
-//in ra màn hình.
+//Tính tổng c của a và b (c = a + b)
+    let c = parseInt(a)+parseInt(b);
 
-document.write(c);
-// show giá trị biến.
-console.log(c);
+//in kết quả ra màn hình.
+    document.write(c);
+    console.log(c);
