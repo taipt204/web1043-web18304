@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Nhập tên
+        let fullName = prompt("Nhập họ và tên: "); 
+        //Nhập giới tính
+        let gender = prompt("Nhập giới tính (Nam/Nữ): "); 
+  
+        //Tách họ tên thành những phần dựa trên khoảng trắng
+        let nameParts = fullName.split(" "); 
+        //lấy phần tử cuối cùng của chuỗi
+        let firstName = nameParts.pop();
+        //lấy phần tử thứ nhất
+        let lastName = nameParts.shift();
+        //Đổi các phần tử không được lấy thành tên đệm
+        let middleName = nameParts.join(" ");
+        // kiểm tra xem giới tính nhập vào là nam  thì đổi tên đệm thành văn
+        if (gender.toLowerCase() === "nam") {
+          middleName = "Văn"; 
+        } 
+        // kiểm tra xem nếu là nữ đổi họ đệm thành Thị
+        else if (gender.toLowerCase() === "nữ") {
+          middleName = "Thị";
+        }
+  
+        // Tên hoàn chỉnh sau khi chỉnh sửa
+        let newFullName = lastName + " " + middleName + " " + firstName;
+  
+        //in ra kết quả tên 
+        console.log("Tên ban đầu : " + fullName.toUpperCase());
+        console.log("Họ: " + lastName);
+        console.log("Tên đệm: " + middleName);
+        console.log("Tên: " + firstName);
+        console.log("Tên mới: " + newFullName.toUpperCase());
+        alert("Tên ban đầu : " + fullName.toUpperCase() + "\nHọ: " + lastName + "\nTên đệm: " + middleName + "\nTên: " + firstName + "\nTên mới: " + newFullName.toUpperCase());
+      </script>
+</body>
+</html>
