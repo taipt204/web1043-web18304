@@ -1,4 +1,4 @@
-function tinhdiemtrungbinh() {
+function tinhdiemtrungbinhSwitch() {
     let toan = parseFloat(prompt("Nhap diem Toan: "));
     let ly = parseFloat(prompt("Nhap diem Ly: "));
     let hoa = parseFloat(prompt("Nhap diem Hoa: "));
@@ -37,24 +37,23 @@ function tinhdiemtrungbinh() {
     alert("Diem trung binh: " + diemTB.toFixed(2) + "\nXep loai: " + xepLoai);
   }
   
-  function tinhDiemTrungBinhSwitch() {
+  function tinhdiemtrungbinhIfElse() {
     let toan = parseFloat(prompt("Nhap diem Toan: "));
     let ly = parseFloat(prompt("Nhap diem Ly: "));
     let hoa = parseFloat(prompt("Nhap diem Hoa: "));
     let sinh = parseFloat(prompt("Nhap diem Sinh: "));
   
     if (
-      toan < 0 ||
-      toan > 10 ||
-      isNaN(toan) ||
-      ly < 0 ||
-      ly > 10 ||
-      isNaN(ly) ||
-      hoa < 0 ||
-      hoa > 10 ||
-      isNaN(hoa) ||
-      sinh < 0 ||
-      sinh > 10 ||
+      toan < 0 || toan > 10 ||
+      isNaN(toan) 
+      ||
+      ly < 0 || ly > 10 ||
+      isNaN(ly) 
+      ||
+      hoa < 0 || hoa > 10 ||
+      isNaN(hoa) 
+      ||
+      sinh < 0 || sinh > 10 ||
       isNaN(sinh)
     ) {
       alert("Nhap sai diem!");

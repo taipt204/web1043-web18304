@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+      <script>
         var a = parseInt(prompt("Nhập a:"));
         var b = parseInt(prompt("Nhập b:"));
         var c = parseInt(prompt("Nhập c:"));
@@ -15,32 +15,31 @@
         if (a == 0) {
           if (b == 0) {
             if (c == 0) {
-            document.write("phương trình vô số nghiệm");
-            alert("phương trình vô số nghiệm");
+              document.write("phương trình vô số nghiệm");
             }
             else {
-            document.write("phương trình vô nghiem");
-            alert("phương trình vô nghiem");
+              document.write("phương trình vô nghiem");
             }
           }
           else {
             document.write("phương trình có nghiệm x= " + -c / b);
-            alert("phương trình có nghiệm x= " + -c / b);
           }
         }
         else {
           var delta = Math.pow(b, 2) - 4 * a * c;
           if (delta < 0) {
             document.write("phương trình vô nghiem");
-            alert("phương trình vô nghiem");
           } else if (delta == 0) {
             document.write("phương trình có nghiệm kép x1 =x2 =" + (-b / 2) * a);
-            alert("phương trình có nghiệm kép x1 =x2 =" + (-b / 2) * a);
           } else {
-            document.write("phương trình có nghiệm x1=" + ((-b + Math.sqrt(delta)) / 2) * a);
-            alert("phương trình có nghiệm x1=" + ((-b + Math.sqrt(delta)) / 2) * a);
-            document.write("<br>" +"phương trình có nghiệm x2=" +((-b - Math.sqrt(delta)) / 2) * a);
-            alert("<br>" +"phương trình có nghiệm x2=" +((-b - Math.sqrt(delta)) / 2) * a);
+            document.write(
+              "phương trình có nghiệm x1=" + ((-b + Math.sqrt(delta)) / 2) * a
+            );
+            document.write(
+              " <br>" +
+                "phương trình có nghiệm x2=" +
+                ((-b - Math.sqrt(delta)) / 2) * a
+            );
           }
         }
       </script>
