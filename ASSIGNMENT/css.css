@@ -1,0 +1,71 @@
+.mot{
+    font-size:15px;
+    font-variant: small-caps;
+    }
+    .menu {
+        min-height: 10px;
+        background-color: rgb(17,81,143);
+    }
+    
+    .menu ul {
+        list-style: nome;
+        background-color:rgb(17,81,143);
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .menu ul li a {
+        display: block;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-size: large;
+        color: rgb(253, 252, 252);
+        padding: 0 10px;
+        line-height: 40px;
+    }
+    
+    .menu ul ul {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        box-shadow: 0 0 2px rgb(18, 19, 19);
+        background-color: rgb(17,81,143);
+        border-radius: 3px;
+        text-align: left;
+    }
+    
+    .menu ul ul li {
+        display: block;
+    }
+    
+    .menu ul ul a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: small;
+        font-variant: small-caps;
+        padding: 0 10px;
+        line-height: 20px;
+        z-index: 1000;
+    }
+    
+    .menu ul ul a:hover {
+        background-color: rgb(22, 108, 238);
+        color: rgb(250, 249, 249);
+        text-shadow: 0 0 3px rgb(22, 108, 238);
+    }
+    
+    .menu ul ul a:hover {
+        color: rgb(12, 86, 151);
+        background-color: dodgerblue;
+    }
+    
+    .menu ul li:hover ul {
+        display: block;
+    }
